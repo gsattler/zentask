@@ -12,6 +12,8 @@ libraryDependencies ++= Seq(
   javaWs
 )
 libraryDependencies += javaJdbc
+includeFilter in (Assets, LessKeys.less) := "login.less" | "main.less"
+
 
 
 // Play provides two styles of routers, one expects its actions to be injected, the
